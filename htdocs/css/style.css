@@ -1,0 +1,209 @@
+/* Reset des marges et padding par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style du corps de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* En-tête */
+h1 {
+    color: #222;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Style pour les titres de sections */
+h2 {
+    color: #444;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Liste des produits */
+ul {
+    list-style-type: none; /* Supprimer les puces */
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style pour chaque produit */
+li {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+/* Effet au survol */
+li:hover {
+    transform: scale(1.05); /* Agrandissement léger du produit au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour le bouton d'ajout au panier */
+form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style du panier */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table td {
+    background-color: #fff;
+}
+
+/* Style du footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Style des liens */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Formulaire de mise à jour du panier */
+form {
+    display: inline;
+}
+
+
+/* Style du formulaire de connexion spécifique */
+.form-connexion {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+/* Style pour les labels dans le formulaire */
+.form-connexion label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Style des champs de saisie dans le formulaire */
+.form-connexion input[type="email"], 
+.form-connexion input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+/* Effet au focus sur les champs du formulaire de connexion */
+.form-connexion input[type="email"]:focus, 
+.form-connexion input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Style du bouton de soumission */
+.form-connexion input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet de survol du bouton de soumission */
+.form-connexion input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style du lien pour l'inscription */
+.form-connexion a {
+    text-decoration: none;
+    color: #007bff;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+.form-connexion label {
+    display: block;           /* Les labels doivent occuper toute la largeur */
+    font-size: 1.5em;         /* Taille de police légèrement plus grande */
+    margin-bottom: 18px;       /* Un peu d'espace sous chaque label */
+    color: #333;              /* Couleur du texte des labels */
+    font-weight: bold;        /* Met les labels en gras pour une meilleure visibilité */
+}
+
+/* Effet de survol du lien */
+.form-connexion a:hover {
+    text-decoration: underline;
+}
