@@ -3,7 +3,6 @@ session_start();  // Démarrer la session pour pouvoir utiliser les variables de
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-include('../sql/includes/db.php');
 ?>
 
 <!DOCTYPE html>
